@@ -1,1 +1,1 @@
-Sitemap: /sitemap.xml
+Sitemap: /dangel-dich-duenn/sitemap.xml
