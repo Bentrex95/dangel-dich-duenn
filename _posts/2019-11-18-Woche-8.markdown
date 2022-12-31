@@ -1,0 +1,24 @@
+---
+layout: post
+title:  "Woche 9!"
+date:   2019-11-19 20:29:00
+categories: post
+img: assets/img/post_6.jpg
+img-alt: "Graph mit stark schwankendem Gewichtsverlauf über eine Woche"
+excerpt_separator: <!--more-->
+---
+
+Eine Woche voller Höhen und Tiefen ist vergangen. Tiefen bei der Performance und Höhen beim Gewicht. Woran lags? Ich habe zwei Theorien:
+<!--more-->
+
+1. Meine Freunde sind schuld. Mehrere Male wurde ich verführt und in den Missbrauch geführt: Nicht nur der Chorstammtisch, auch ein Kochabend voller Alkohol,Jägereintopf Hirschragout und andere Aktivitäten erforderten hohen Tribut und ließen meine Fettpolster frohlocken. Meine Freunde nutzten also schamlos meine Beeinflussbarkeit und Gutmütigkeit aus und ich bin selbst nicht verantwortlich für mein Handeln.
+
+2. Es ging eigentlich doch voran unter Berücksichtigung eines großen Fehlers in einer angepassten Sigma-Umgebung um die Messwerte der wöchentlichen Fettkurve. Mehrere Messwerte und Mittelung würden eventuell zu einem Graphen führen, so dass die gemittelten Werte einen Abstieg zeigen würden.
+
+Oder, was ich aber für sehr unwahrscheinlich halte ist, dass ich einfach zu unkonsequent war und aus dieser Woche lernen sollte wieder mehr mein Ding durchzuziehen.
+
+Einigen habe ich für diese Woche bereits einen Videoblogeintrag angekündigt, dafür hatte ich allerdings keine Zeit, da ich mit Inkonsequentem beschäftigt war.Immerhin ein pünktlicher Blogeintrag also seid zufrieden ihr Banausen!
+
+Tatsächlich habe ich auch mein Intervallfasten über den Haufen geworfen, es ging ja jetzt doch einige Zeit nicht wirklich voran. Um besser justieren zu können und wöchentliche Anpassungen vornehmen zu können, falls die Vorwoche keine befriedigende Resultate lieferte. Aber da MidNf(Mitten in der Nacht fresesen) sich nicht wieder etabliert, versuche ich grob mich an gewisse Grenzzeiten zu halten. Meine Sportblocks funktionieren soweit ganz gut und ich habe auch meine Liste an Zielen aktualisiert: Mit durchschnittlich 0,3kg Gewichtsverlust, ausgehend von letzter Woche und 82kg würde das zu 73.6kg am 13.06.2020 führen. Das entspräche dann einem Körperfettgehalt von ~10%. Prinzipiell sind ca 0,5kg pro Woche möglich, da ich aber sicherlich immer wieder auf Probleme wie übermäßiger Jägereintopf Hirschragout Genuss stoßen werde, dieses moderate Ziel.
+
+Ich wünsche euch und mir eine trockene, hirschragoutfreie Woche um uns voranzudangeln.

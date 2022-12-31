@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<h1 class="bebtitle">{{ page.title }}</h1>
+<span>Veröffentlicht am: {{ page.date | date: "%d.%m.%Y" }}</span>
+<hr class="ddd-hr">
+
+{{ content }}
+<a href="{{ site.baseurl }}" class="dangellink">#dangel_dich_dünn</a>
+<br>
+
+{% if page.img %}
+    <img src="{{ page.img | relative_url }}"
+         class="img-fluid mx-auto d-block w-100"
+         alt={{ page.img-alt }}
+         style="max-width: 600px;"
+    >
+{% endif %}

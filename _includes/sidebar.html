@@ -1,0 +1,31 @@
+<hr class="ddd-hr">
+<ul class="posts">
+    <p class="header">Letzte Posts</p>
+    {% for post in site.posts limit: 5 %}
+    <li class="post"><a href="{{ post.url | relative_url }}" class="dangellink">{{ post.title | truncate: 40}}</a></li>
+    {% endfor %}
+</ul>
+<hr class="ddd-hr">
+<div class="social">
+    <a href="{{ "alle.html" | relative_url }}" class="dangellink">Alle Posts</a>
+</div>
+
+<hr class="ddd-hr">
+<div class="social">
+    <p class="header">Social Media</p>
+    {% if site.twitter %}
+    <a href="{{ site.twitter }}" class="dangellink"><i class="fa-brands fa-square-twitter fa-2xl"></i></a>
+    {% endif %}
+    {% if site.facebook %}
+    <a href="{{ site.facebook }}" class="dangellink"><i class="fa-brands fa-square-facebook fa-2xl"></i></a>
+    {% endif %}
+    {% if site.instagram %}
+    <a href="{{ site.instagram }}" class="dangellink"><i class="fa-brands fa-square-instagram fa-2xl"></i></a>
+    {% endif %}
+    <a href="{{ "feed.xml" | relative_url }}" class="dangellink"><i class="fa-solid fa-square-rss fa-2xl"></i></a>
+</div>
+<hr class="ddd-hr">
+<div class="impressum d-none d-lg-block">
+    <a href="{{ "/impressum.html" | prepend: site.baseurl }}" class="dangellink">Impressum</a>
+    <a href="{{ "/datenschutzerklärung.html" | prepend: site.baseurl }}" class="dangellink">Datenschutzerklärung</a>
+</div>

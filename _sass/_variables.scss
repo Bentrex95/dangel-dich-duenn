@@ -1,0 +1,18 @@
+$fa-font-path:        "../fonts/fontawesome";
+
+$pagination-color: $dangelblau;
+$pagination-bg: $dangelbeige;
+$pagination-border-radius: 3px;
+$pagination-border-color: $dangelblau;
+
+$pagination-hover-color: darken($dangelblau, 10%);
+$pagination-hover-bg: darken($dangelbeige, 10%);
+$pagination-hover-border-color: darken($dangelblau, 10%);
+
+$pagination-active-color: $dangelgrau;
+$pagination-active-bg: $dangelbeige;
+$pagination-active-border-color: $dangelblau;
+
+$pagination-disabled-color: $dangelgrau;
+$pagination-disabled-bg: $dangelbeige;
+$pagination-disabled-border-color: $dangelblau;

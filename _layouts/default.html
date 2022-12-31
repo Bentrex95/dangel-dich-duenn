@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+{% include head.html %}
+
+<body>
+  {% include header.html %}
+  <div class="container py-3">
+    <div class="container px-2 py-2">
+
+      <div class="row">
+        <div class="col-lg-2 navigation">
+            <a href="{{ "/" | relative_url }}" class="logo">
+            <div>
+              <img src={{"assets/img/logo.svg" | relative_url}} alt="logo" class="logo">
+              <span class="title">Dangel dich dünn!</span><br>
+              <span class="subtitle">Bebs Weg zum Beachbody</span>
+            </div>
+            </a>
+            <div class="d-none d-lg-block">
+              {% include sidebar.html %}
+            </div>
+        </div>
+        <div class="col-lg-10">
+            {{ content }}
+        </div>
+      </div>
+
+      <div class="d-lg-none">
+        {% include sidebar.html %}
+      </div>
+    </div>
+  </div>
+
+  {% include footer.html %}
+</body>
+
+</html>

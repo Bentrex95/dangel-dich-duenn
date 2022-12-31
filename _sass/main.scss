@@ -1,0 +1,99 @@
+$lightgrey: #f2f2f2;
+$darkgrey: #666666;
+$dangelbeige: #efe3af;
+$dangelblau: #00a2eaff;
+$dangelgrau: #628dc3ff;
+
+$navbar-padding: 15px;
+
+body {
+  background-color: $dangelbeige !important;
+}
+
+@media (min-width: 992px) {
+  div.navigation {
+    border-right: 2px solid darken($dangelbeige, 20%);
+  }
+}
+
+hr.ddd-hr {
+  border-top: 2px solid darken($dangelbeige, 50%);
+}
+
+img.logo {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+div.impressum {
+  font-size: 12px;
+  padding-left: $navbar-padding;
+}
+
+ul.posts {
+  padding-left: 19px;
+  overflow: hidden;
+}
+
+ul li.post::marker {
+  content: url("bullet.svg");
+  display: inline-block;
+  vertical-align: middle;
+}
+
+a.dangellink {
+  color: $dangelblau;
+}
+
+a.dangellink:hover {
+  color: $dangelgrau;
+}
+
+a.logo {
+  text-decoration: none;
+  color: $dangelgrau;
+}
+
+a.post {
+  text-decoration: none;
+  color: $dangelgrau;
+
+  div.postexcerpt {
+    color: $dangelblau;
+  }
+
+  span.date {
+    color: $dangelgrau;
+  }
+}
+
+div.social {
+  padding-left: $navbar-padding;
+}
+
+p.header {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 0.3rem;
+  color: $dangelgrau;
+}
+
+span.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: $dangelgrau;
+}
+
+span.subtitle {
+  font-size: 14px;
+  color: $dangelgrau;
+}
+
+h1.bebtitle, h2.bebtitle, h3.bebtitle, h4.bebtitle, h5.bebtitle, h6.bebtitle{
+    color: $dangelgrau;
+}
+
+p.footer-text {
+  font-size: 12px;
+  color: $dangelgrau;
+}

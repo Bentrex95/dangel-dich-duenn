@@ -1,0 +1,39 @@
+{% if paginator.total_pages > 1 %}
+<nav aria-label="pagination navigation">
+<ul class="pagination">
+  {% if paginator.previous_page %}
+    <li class="page-item">
+      <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" class="page-link">Neuer</a>
+    </li>
+  {% else %}
+  <li class="page-item disabled">
+      <span class="page-link">Neuer</span>
+  </li>
+  {% endif %}
+
+  {% if paginator.page_trail %}
+  {% for trail in paginator.page_trail %}
+  {% if page.url == trail.path %}
+  <li class="page-item active" aria-current="page">
+    <span class="page-link">{{ trail.num }}</span>
+  </li>
+  {% else %}
+  <li class="page-item">
+    <a href="{{ trail.path | prepend: site.baseurl }}" title="{{trail.title}}" class="page-link">{{ trail.num }}</a> 
+  </li>
+  {% endif %}
+  {% endfor %}
+  {% endif %}
+
+  {% if paginator.next_page %}
+  <li class="page-item">
+    <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" class="page-link">Älter</a>
+  </li>
+  {% else %}
+  <li class="page-item disabled">
+      <span class="page-link">Älter</span>
+  </li>
+  {% endif %}
+</ul>
+</nav>
+{% endif %}

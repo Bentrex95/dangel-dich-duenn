@@ -1,0 +1,19 @@
+---
+layout: default
+---
+
+<h1 class="bebtitle">Letzter Post:</h1>
+{% for post in site.posts limit: 1 %}
+    <h2 class="bebtitle">{{ post.title }}</h2>
+    <span>Veröffentlicht am: {{ post.date | date: "%d.%m.%Y" }}</span>
+    <hr class="ddd-hr">
+    {{ post.content }}
+
+    {% if post.img %}
+    <img src="{{ post.img | relative_url }}"
+         class="img-fluid mx-auto d-block w-100"
+         alt={{ post.img-alt }}
+         style="max-width: 600px;"
+    >
+    {% endif %}
+{% endfor %}

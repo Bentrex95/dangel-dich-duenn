@@ -1,0 +1,30 @@
+---
+layout: default
+title: Alle Posts
+pagination:
+  enabled: true
+  category: posts
+  permalink: "/alle/:num/"
+  indexpage: "/alle"
+---
+
+<h1 class="bebtitle">Alle bisherigen Posts</h1>
+<hr class="ddd-hr">
+{% for post in paginator.posts %}
+  <div class="post">
+    <a class="post" href="{{ post.url | relative_url }}">
+      <h3 class="bebtitle">{{ post.title }}</h3>
+      <span class="post-date">{{ post.date | date: "%d.%m.%Y" }}</span>
+      <div class="postexcerpt">
+        {% if post.excerpt_separator %}
+        {{ post.excerpt | strip_html }}
+        {% else %}
+        {{ post.content | strip_html | truncatewords: 30 }}
+        {% endif %}
+      </div>
+    </a>
+  </div>
+  <hr class="ddd-hr">
+{% endfor %}
+
+{% include pagination.html %}

@@ -1,0 +1,47 @@
+name: Build and deploy
+
+on:
+  push:
+    branches:
+      - main
+
+  # Allows you to run this workflow manually from the Actions tab
+  workflow_dispatch:
+
+jobs:
+  jekyll:
+    runs-on: ubuntu-20.04
+    steps:
+      - name: Setup
+        uses: actions/checkout@v2
+
+      - name: Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          ruby-version: 2.7
+
+      - name: Install Dependencies/Build
+        uses: limjh16/jekyll-action-ts@v2
+        with:
+          enable_cache: true
+          ### Enables caching. Similar to https://github.com/actions/cache.
+          #
+          format_output: true
+
+          # key: ${{ runner.os }}-gems-${{ hashFiles('**/Gemfile.lock') }}
+          # restore-keys: ${{ runner.os }}-gems-
+          ### In cases where you want to specify the cache key, enable the above 2 inputs
+          ### Follows the format here https://github.com/actions/cache
+          #
+          # custom_opts: '--drafts --future'
+          ### If you need to specify any Jekyll build options, enable the above input
+          ### Flags accepted can be found here https://jekyllrb.com/docs/configuration/options/#build-command-options
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./_site
+          # if the repo you are deploying to is <username>.github.io, uncomment the line below.
+          # if you are including the line below, make sure your source files are NOT in the master branch:
+          # publish_branch: master
